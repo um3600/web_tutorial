@@ -134,28 +134,20 @@ display: flex;
     font-size: 14px;
 }
 .image-container {
-    /* Set the container to be the size of the image area */
-    min-height: 400px; /* Or a specific height */
+    min-height: 400px;
     width: 100%;
-    position: relative; /* Needed to position the search bar absolutely within it */
-    background-image: url("your-image.jpg");
-    background-size: cover; /* Ensures the image covers the container */
-    background-position: center; /* Centers the image */
+    position: relative; 
+    background-image: url("./pictures/duck.png");
+    background-size: cover; 
+    background-position: center; 
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    justify-content: center;
+    align-items: center; 
 }
 
-.search-bar-overlay {
-    /* Styles the container around your form */
-    /* Position can be static if using flexbox on the parent */
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */ /* Centers the element precisely */
-    
-    /* Example styling for the search bar itself */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+
+   
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
