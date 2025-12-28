@@ -133,3 +133,17 @@ display: flex;
     color: #555;
     font-size: 14px;
 }
+.banner {
+    /* Set the image as a background */
+    background-image: url("./pictures/duck.png");
+    min-height: 400px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position:center; 
+    align-items: center; 
+   justify-content: center; 
+    color: white;
+    text-align: center; 
+}
+
