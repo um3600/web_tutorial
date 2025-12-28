@@ -133,4 +133,47 @@ display: flex;
     color: #555;
     font-size: 14px;
 }
+.image-container {
+    /* Set the container to be the size of the image area */
+    min-height: 400px; /* Or a specific height */
+    width: 100%;
+    position: relative; /* Needed to position the search bar absolutely within it */
+    background-image: url("your-image.jpg");
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.search-bar-overlay {
+    /* Styles the container around your form */
+    /* Position can be static if using flexbox on the parent */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */ /* Centers the element precisely */
+    
+    /* Example styling for the search bar itself */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar-overlay input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 250px;
+}
+
+.search-bar-overlay button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
