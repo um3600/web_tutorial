@@ -2,13 +2,19 @@ body{
     margin: 0;
     font-family: Arial, sans-serif;
 }
+.search-box{
+    width: 40%;
+    max-width: 400px;
+    min-width: 250px;
+}
 
 .hdr{
-display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 52px;
+    padding: 15px 30px;
     background: white;
+    flex-wrap: wrap;
 }
 
 .lgo{
@@ -21,44 +27,28 @@ display: flex;
     color: black;
 }
 
-.main-img{
-    position: relative;
-    height: 70vh;
-}
-
-.main-img img{
-    width: 2048px;
-    height: 300px;
-   
-}
-
-
-
-.search input{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-}
-
-.search button{
-    padding: 10px;
-    border: none;
-    background: #009999;
+.banner {
+    background-image: url("./pictures/duck.png");
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     color: white;
-    
+    text-align: center;
 }
-
 
 .glly{
-    padding: 50px;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
 
 .box{
-    box-shadow: 0 0 8px gray;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
 .box img{
@@ -67,25 +57,20 @@ display: flex;
     object-fit: cover;
 }
 
-.box p{
-    padding: 10px;
-}
-
-
 .footer{
     background: #f2f2f2;
-    padding: 60px 80px 20px;
-    font-family: Arial, sans-serif;
+    padding: 50px 40px 20px;
 }
 
 .footer-box{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-
 .footer-col{
-    width: 30%;
+    flex: 1 1 300px;
 }
 
 .footer-col h3{
@@ -110,6 +95,7 @@ display: flex;
     text-decoration: none;
     color: #333;
 }
+
 .scl{
     margin-bottom: 15px;
 }
@@ -126,24 +112,63 @@ display: flex;
     font-weight: bold;
 }
 
-.footer-bottom{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    color: #555;
-    font-size: 14px;
-}
-.banner {
-    /* Set the image as a background */
-    background-image: url("./pictures/duck.png");
-    min-height: 400px; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover; 
-    position:center; 
-    align-items: center; 
-   justify-content: center; 
-    color: white;
-    text-align: center; 
+
+@media (max-width: 992px){
+    .glly{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
+@media (max-width: 768px){
+    .hdr{
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mnu{
+        margin-top: 10px;
+    }
+
+    .glly{
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+    }
+
+    .banner{
+        min-height: 220px;
+    }
+
+    .footer{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .glly{
+        grid-template-columns: 1fr;
+    }
+
+    .mnu a{
+        margin-left: 10px;
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+.search-box{
+    width: 40%;
+    max-width: 500px;
+    margin: 40px auto;  
+    display: flex;
+}
+
+.search-box input{
+    flex: 1;
+    padding: 7px;
+}
+
+@media (max-width: 768px){
+    .search-box{
+        width: 90%;
+    }
+}
